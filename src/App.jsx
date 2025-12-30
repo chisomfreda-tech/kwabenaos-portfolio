@@ -132,7 +132,7 @@ const App = () => {
         }}>
           KOS
         </div>
-        <div style={{ display: 'flex', gap: '32px' }}>
+        <div style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
           {['WORK', 'RESEARCH', 'CONTACT'].map(item => (
             <span 
               key={item}
@@ -146,6 +146,22 @@ const App = () => {
               {item}
             </span>
           ))}
+          <a 
+            href="/Kwabena_Owusu_Sarfo_Resume.pdf" 
+            download
+            style={{
+              fontSize: '12px',
+              letterSpacing: '0.2em',
+              color: '#0a0a0a',
+              backgroundColor: '#fff',
+              padding: '8px 16px',
+              borderRadius: '100px',
+              textDecoration: 'none',
+              cursor: 'pointer'
+            }}
+          >
+            RESUME
+          </a>
         </div>
       </nav>
 
@@ -430,7 +446,7 @@ const App = () => {
         <span>© 2025 Kwabena Owusu Sarfo</span>
         <div style={{ display: 'flex', gap: '24px' }}>
           <a href="#" style={{ color: 'rgba(255,255,255,0.3)', textDecoration: 'none' }}>LinkedIn</a>
-          <a href="#" style={{ color: 'rgba(255,255,255,0.3)', textDecoration: 'none' }}>Resume</a>
+          <a href="/Kwabena_Owusu_Sarfo_Resume.pdf" download style={{ color: 'rgba(255,255,255,0.3)', textDecoration: 'none' }}>Resume</a>
         </div>
       </footer>
     </div>
@@ -438,4 +454,3 @@ const App = () => {
 };
 
 export default App;
-
